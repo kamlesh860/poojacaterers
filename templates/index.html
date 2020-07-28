@@ -1,0 +1,133 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Colorlib Templates">
+    <meta name="author" content="Colorlib">
+    <meta name="keywords" content="Colorlib Templates">
+
+    <!-- Title Page-->
+    <title>Contact Us</title>
+
+    
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Icons font CSS-->
+    <link href="../pooja_caterers/static/css/material-design-iconic-font.min.css" rel="stylesheet" media="all">
+    <link href="../pooja_caterers/static/css/font-awesome.min.css" rel="stylesheet" media="all">
+    <!-- Font special for pages-->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
+
+    <!-- Vendor CSS-->
+    <link href="{% static 'css/select2.min.css' %}" rel="stylesheet" media="all">
+    <link href="{% static 'css/daterangepicker.css' %}" rel="stylesheet" media="all">
+
+    <!-- Main CSS-->
+    <link href="{% static 'css/main1.css'  %}" rel="stylesheet" media="all">
+    <style>
+        .card-2 .card-heading {
+    background: url("{% static 'images/bg-heading-02.jpg' %}") top left/cover no-repeat;
+    width: 29.1%;
+    display: table-cell;
+  }
+    </style>
+</head>
+
+<body>
+    <div class="page-wrapper bg-red p-t-180 p-b-100 font-robo">
+        <div class="wrapper wrapper--w960">
+            <div class="card card-2">
+                <div class="card-heading"></div>
+                <div class="card-body">
+                    <h2 class="title " style="text-align: center;">Contact Us</h2>
+                    <form action="{% url 'contact_us_form' %}" method="POST">
+                        {% csrf_token %}
+
+                        <div class="input-group">
+                            <input class="input--style-2" type="text" placeholder="Full Name" name="full_name">
+                        </div>
+
+                        <div class="input-group">
+                            <input class="input--style-2" type="email" placeholder="Email Id" name="email">
+                        </div>
+
+
+                        <div class="input-group">
+                            <input class="input--style-2" type="number" placeholder="Mobile No" name="mobile_no">
+                        </div>
+
+                        <div class="input-group">
+    						<input class="input--style-2" type="text" name="comment" placeholder="Comments">
+    					</div>
+                        <div class="p-t-30">
+                            <button class="btn btn-success" type="submit">Send now</button>
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+                                Term and conditions
+                              </button>
+                        </div>
+                    </form>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+ 
+<!-- -------------------------------------------Tearm and condition--------------------------- -->
+	<!-- Button trigger modal -->
+
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+	<div class="modal-dialog modal-dialog-centered" role="document">
+	  <div class="modal-content">
+		<div class="modal-header">
+		  <h5 class="modal-title" id="exampleModalLongTitle">Term and conditions</h5>
+		  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			<span aria-hidden="true">&times;</span>
+		  </button>
+		</div>
+		<div class="modal-body">
+			<ul>
+				<li>P.R.O. charges will be extra.</li>
+				<li>Catering counter managed by client and display counter charges will be extra.</li>
+				<li>Billing will be done as per the total order quantity, in case of addition of person cost would be extra as per the decided cost. </li>
+				<li>Any changes will be considered minimum before 15 days from the date of function. </li>
+				<li>Food taste will remain constant 3 to 4 hours. </li>
+				<li>In case monopoly of decoration, utensils, crockery, etc of party plot / hall charges would be as applicable to the client. </li>
+				<li>Garbage of the disposal or food manage by client. </li>
+				<li>Payment terms - 80% advance - rest of the amount a day after the function. </li>
+				<li>Special decoration /crockery charges will be extra. </li>
+				<li>All arrangements will be done by client like electricity water and kitchen permission (gas line also). </li>
+
+			  </ul>
+		</div>
+		<div class="modal-footer">
+		  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+		</div>
+	  </div>
+	</div>
+  </div>
+
+    <!-- Jquery JS-->
+    <script src="{% static 'js/jquery.min.js' %}"></script>
+    <!-- Vendor JS-->
+    <script src="{% static 'js/select2.min.js' %}"></script>
+    <script src="{% static 'js/moment.min.js' %}"></script>
+    <script src="{% static 'js/daterangepicker.js' %}"></script>
+
+    <!-- Main JS-->
+    <script src="{% static 'js/global.js' %}"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+</body><!-- This templates was made by Colorlib (https://colorlib.com) -->
+
+</html>
+<!-- end document-->

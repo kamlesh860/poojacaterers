@@ -1,0 +1,211 @@
+{% load static %}
+<html lang="en">
+<head>
+  <title>Pooja Caterers</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <link rel="stylesheet" href="{% static 'css/main.css' %}">
+  
+  
+
+  <style>
+* {
+  box-sizing: border-box;
+}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+
+
+#contactus {
+  border-radius: 10px;
+  background-color: #f2f2f2;
+  padding: 50px;
+  
+}
+
+.img_background {
+	background-image: url("../static/images/pc_back.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height:600px;
+    width :100%;
+}
+.footer{
+    background-color:#333;
+}
+
+
+
+/* Clear floats after the columns */
+
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+
+.fa {
+  padding: 10px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+  
+  
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+</style>
+
+</head>
+<body id="page">
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+		<div class="container">
+  <a class="navbar-brand" href="{% url 'home' %}"><h1 style="font-size: 4vh;color:darkorange;">POOJA CATERERS</h1></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav ml-auto text-center">
+      <li class="nav-item active">
+        <a class="nav-link text-capitalize" href="{% url 'home' %}">home
+        	<span class="sr-only">(current)</span></a>
+      </li>
+
+	  <li class="nav-item active">
+        <a class="nav-link text-capitalize" href="/aboutus/">about us</a><span class="sr-only">(current)</span></a>
+      </li>
+
+	  <li class="nav-item active">
+        <a class="nav-link text-capitalize" href="/gallary/">gallary <span class="sr-only">(current)</span></a>
+      </li>
+
+	  <li class="nav-item active">
+        <a class="nav-link text-capitalize" href="{% static 'images/pooja caterers pdf.pdf' %}" download>menu <span class="sr-only">(current)</span></a>
+      </li>
+	  
+      <li class="nav-item active">
+        <a class="nav-link text-capitalize" href="/contactus/">contact us</a>
+      </li>
+      
+    </ul>
+   
+  </div>
+</div>
+</nav>
+
+{% block content %}
+
+{% endblock%}
+<!-- Footer -->
+<footer class="footer" id="foo-back">
+    <div class="container pt-4">
+      <div class="row">
+        <div class="col-lg-4">
+          <h5 class="" style="text-decoration: underline;color: white;">POOJA CATERERS</h5>
+          <p class="pt-2" style="color:darkgray;font-weight: 500;">10 , Aarshivad Residency ,<br>
+            Nr.Panjra Pole , SP Ring Road ,<br>
+            Vastral , Ahmedabad -382418
+          </p>
+
+            <h5 class="" style="text-decoration: underline;color: white;">Radheshyambhai Vaishnav</h5>
+            <p class="pt-2" style="color:darkgray;font-weight: 500;">
+            +91 9879055813 , 8320985263</p>
+          
+            <h5 class="" style="text-decoration: underline;color: white;">Email</h5>
+            <p class="pt-2" style="color:darkgray;font-weight: 500;">
+              poojacaterers987@gmial.com</p>
+          
+        </div>
+        <div class="col-lg-4">
+          <h5 class="" style="text-decoration: underline;color: white;">NAVIGATION</h5>
+
+          <ul class="navbar-nav ml-auto ">
+            <li class="nav-item active">
+              <a class="nav-link text-capitalize" href="{% url 'home' %}">home
+                <span class="sr-only">(current)</span></a>
+            </li>
+      
+          <li class="nav-item active">
+              <a class="nav-link text-capitalize"  href="/aboutus/">about us</a><span class="sr-only">(current)</span></a>
+            </li>
+      
+          <li class="nav-item active">
+              <a class="nav-link text-capitalize" href="/gallary/">gallary <span class="sr-only">(current)</span></a>
+            </li>
+      
+          <li class="nav-item active">
+              <a class="nav-link text-capitalize" href="{% static 'images/pooja caterers pdf.pdf' %}" download>menu <span class="sr-only">(current)</span></a>
+            </li>
+          
+            <li class="nav-item active">
+              <a class="nav-link text-capitalize" href="/contactus/">contact us</a>
+            </li>
+            
+          </ul>
+        </div>
+        <div class="col-lg-4">
+          <h5 class="" style="text-decoration: underline;color: white;">FOLLOW US</h5>
+          <div class="pt-4">
+            <a href="#" class="fa fa-facebook "></a>
+            <a href="#" class="fa fa-youtube"></a>
+            <a href="#" class="fa fa-instagram"></a>
+          </div>
+          
+        </div>
+      </div>
+
+    </div>
+  
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3">
+      <p style="color:darkgray;"> © 2020 Copyright : poojacaterers.com</p>
+    </div>
+    <!-- Copyright -->
+  
+  </footer>
+  <!-- Footer -->
+  
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  
+  </body>
+  </html>

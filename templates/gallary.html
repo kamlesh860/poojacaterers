@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+	<section>
+		<div class="container">
+    	<h1 class="text-center mt-4 mb-2" style="text-decoration:underline;">GALLARY</h1>
+    	<div class="row">
+			{% for i in prod %}
+    		<div class="col-lg-4 col-md-12 my-3">
+    			<div class="shadow bg-white p-2 mt-2">
+    				<img  src="{{i.img.url}}" class="img-fluid rounded" style="height: 210px;width: 100%;">
+    			</div>
+    		</div>
+			{% endfor %}
+
+    		</div>
+    	</div>
+    </div>
+	</section>
+
+<br>
+	{% endblock %}

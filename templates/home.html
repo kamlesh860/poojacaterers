@@ -1,0 +1,198 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<br>
+	<section class="img_background ">
+		<div class="container ">
+			
+			<h1 class="text-center" style="padding-top: 100px;font-size: 60px;color:darkorange;">WELCOME</h1>
+			<h5 class="text-center" style="font-size: 5vh;color:darkorange;">Welcome to our food and catering services....</h5>
+			
+		</div>
+	</section>
+
+<!-- -------------------------------------------------About us--------------------------------- -->
+
+    <section class="img-background1">
+
+            <div class="container">
+            	<h1 class="text-center mt-4 pt-4" style="text-decoration:underline;font-family:'Times New Roman', Times, serif;color:saddlebrown;">ABOUT US</h1>
+
+                <div  class="row">
+                    <div class="col-lg-6 col-md-6 ">
+                        <img  class="img-fluid "  src="../static/images/pooja caterers/6211.png" style="width: 90%; height: 300px;margin-top: 100px;border-radius: 50%;">
+    			
+                    </div>
+                    <div id="about-text"class="col-lg-6 col-md-6 ">
+
+                    	<p class="text-justify">Pooja caterers has been promoted by Radheshyambhai vaishnav by his own experience who is engaged in the food and outdoor catering business since many years.
+						Pooja caterers has created his own empire in the outdoor catering field by his own efforts without any help of generation at last 20 year.
+						Experience any a creator of new items. Pooja caterers is the company who sets every occasions according to budget and mind of the party.
+						Pooja caterers is managed by qualified and experienced persons having a proven track record in this field.
+						The company is managed in a professional way with adequate organization.
+						The employees of the organization are trained.
+						</p>
+						<p>
+						Pooja caterers is engaged in the business of delicious food processing and catering business.
+						It manufatures more than 500 items comprising of Juice, Starters, 
+						Bittings, Soups, Caat, Salads, North Indian(Punjabi), Chinese, Mexican, Rajasthani,  Gujarati, Sweets, 
+						Deserts, Snacks, Etc.
+						All theses food items are prepared as per our own traditional customs and procedures.
+						Pooja cateres is known for its professional catering service with latest infrastructure,delicious and quality food prepared with utmost
+						care in hygienic conditions. Pooja caterers has specialized in outdoor catering for weeding and other occasions.
+					    </p>
+                        	
+                    </div>
+				</div>
+            </div>
+    </section >
+<!-- -------------------------------------------------------Finnish----------------------- -->
+
+    <!-- <section class="img-background2">
+   
+    		<div class="container">
+    			<h2 class="gallary">Gallary</h2>
+	    		<div id="gallary1" class="row">	
+	    			<div class="col-lg-4 col-md-12 ">
+	    				<h4 id="gallary-text" >Wedding</h4>
+	    				<img class="img-fluid" src="C:/Users/kamlesh/Desktop/caterers_project/images/i.jpg">
+	    			</div>
+
+	    			<div class="col-lg-4 col-md-12 ">
+	    				<h4 id="gallary-text" >Wedding</h4>
+	    				<img class="img-fluid" src="C:/Users/kamlesh/Desktop/caterers_project/images/i.jpg">
+	    			</div>
+
+	    			<div class="col-lg-4 col-md-12 ">
+	    				<h4 id="gallary-text" >Wedding</h4>
+	    				<img class="img-fluid" src="C:/Users/kamlesh/Desktop/caterers_project/images/i.jpg">
+	    			</div>
+	    		</div>
+			</div>
+	
+    </section> -->
+
+
+	<!-- ---------------------------------------------------Gallary---------------------------------- -->
+
+    <div class="container">
+    	<h1 class="text-center mt-4 mb-2" style="text-decoration:underline;font-family:'Times New Roman', Times, serif;color:saddlebrown;">GALLARY</h1>
+    	<div class="row">
+    		<div class="col-lg-4 col-md-12 ">
+    			<div class="shadow bg-white p-2 mt-2">
+    			<a href="{% url 'gallary' %}"><img style="height: 210px;width: 100%;" src="{% static 'images/mariege.jpg' %} " class="img-fluid rounded "></a>	
+    				<h3 style="font-family: 'Times New Roman', Times, serif;" class="text-capitalize pt-2 text-center">Wedding</h3>
+    			</div>
+    		</div>
+
+			<div class="col-lg-4 col-md-12">
+    			<div class="shadow bg-white p-2 mt-2">
+    			<a href="{% url 'gallary' %}"><img style="height: 210px;width: 100%;" src="../static/images/116.jpg" class="img-fluid rounded"></a>	
+    				<h3 style="font-family: 'Times New Roman', Times, serif;" class="text-capitalize pt-2 text-center">Engagement</h3>
+    			</div>
+    		</div>
+
+			<div class="col-lg-4 col-md-12">
+    			<div class="shadow bg-white p-2 mt-2">
+    			<a href="{% url 'gallary' %}"><img style="height: 210px;width: 100%;" src="../static/images/111.jpg" class="img-fluid rounded"></a>	
+    				<h3 style="font-family: 'Times New Roman', Times, serif;" class="text-capitalize pt-2 text-center">Birthday Party</h3>
+    			</div>
+    		</div>
+    		<!-- <div class="col-lg-4">
+    			<div class="shadow bg-white p-2 mt-2">
+    				<img src="images/i.jpg" class="img-fluid rounded">
+    				<h3 class="text-capitalize pt-2">marriage</h3>
+    			</div>
+    		</div>
+    		<div class="col-lg-4">
+    			<div class="shadow bg-white p-2 mt-2">
+    				<img src="images/i.jpg" class="img-fluid rounded">
+    				<h3 class="text-capitalize pt-2">marriage</h3>
+    			</div>
+    		</div>
+    		<div class="col-lg-4">
+    			<div class="shadow bg-white p-2 mt-2">
+    				<img src="images/i.jpg" class="img-fluid rounded">
+    				<h3 class="text-capitalize pt-2">marriage</h3>
+    			</div>
+    		</div> -->
+    	</div>
+    </div>
+
+<!-- --------------------------------------------Contact us----------------------------------------- -->
+
+    <section class="img-background3 container-fluid">
+    	<div id="contactus">
+    		<h2 class="contactus "style="text-decoration:underline;font-family:'Times New Roman', Times, serif;color:saddlebrown;font-size350px;">CONTACT US</h2>
+
+    		<div class="row">
+    			<div class="col-lg-6">
+    				<img  class="img-circle" id="form-logo" src="../static/images/pooja caterers/6211.png" style="width: 90%; height: 70vh;">
+    			</div>
+
+    			<div id="contact-form" class="col-lg-6">
+<!-- -----------------------------------------------------------------Form----------------- -->
+    				<form action="{% url 'contact_us_form' %}" method="POST">
+						{% csrf_token %}
+
+    					<div class="form-group">
+    						<input type="text" name="full_name" placeholder="Full Name">
+    					</div>
+    					<div class="form-group">
+    						<input type="email" class="form-control" name="email" placeholder="Email">
+    					</div>
+    					<div class="form-group">
+    						<input type="number" class="form-control" name="mobile_no" placeholder="Mobile Number">
+    					</div>
+    					<div class="form-group">
+    						<input type="text" name="comment" placeholder="Comments">
+    					</div>
+						<button class="btn btn-outline-success" type="submit">Send Now</button>
+						<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+							Term and conditions
+						  </button>
+    				</form>
+<!-- ----------------------------------- --Done--Form---------------------------- -->
+
+    			</div>
+    		</div>
+    		
+    	</div>
+	</section>
+
+<!-- -------------------------------------------Tearm and condition--------------------------- -->
+	<!-- Button trigger modal -->
+
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+	<div class="modal-dialog modal-dialog-centered" role="document">
+	  <div class="modal-content">
+		<div class="modal-header">
+		  <h5 class="modal-title" id="exampleModalLongTitle">Term and conditions</h5>
+		  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			<span aria-hidden="true">&times;</span>
+		  </button>
+		</div>
+		<div class="modal-body">
+			<ul>
+				<li>P.R.O. charges will be extra.</li>
+				<li>Catering counter managed by client and display counter charges will be extra.</li>
+				<li>Billing will be done as per the total order quantity, in case of addition of person cost would be extra as per the decided cost. </li>
+				<li>Any changes will be considered minimum before 15 days from the date of function. </li>
+				<li>Food taste will remain constant 3 to 4 hours. </li>
+				<li>In case monopoly of decoration, utensils, crockery, etc of party plot / hall charges would be as applicable to the client. </li>
+				<li>Garbage of the disposal or food manage by client. </li>
+				<li>Payment terms - 80% advance - rest of the amount a day after the function. </li>
+				<li>Special decoration /crockery charges will be extra. </li>
+				<li>All arrangements will be done by client like electricity water and kitchen permission (gas line also). </li>
+
+			  </ul>
+		</div>
+		<div class="modal-footer">
+		  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+		</div>
+	  </div>
+	</div>
+  </div>
+{% endblock %}
