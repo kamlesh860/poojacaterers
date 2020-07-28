@@ -1,0 +1,80 @@
+{% load static %}
+
+.img_background {
+	background-image: url("{static 'images/pc_back.jpg' }");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height:600px;
+    width :100%;
+}
+.img-background1{
+	background-color:#F5F5F5;
+	
+
+}
+.aboutus{
+    font-weight: bold;
+    font-size: 35px;
+    text-align: center;
+    padding-top: 50px;
+}
+#about-img{
+    
+    padding-top: 120px;
+    height: 100px;
+    width: 100%;
+}
+#about-text{
+    padding-top: 50px;
+   
+}
+
+.img-background2{
+    background-color:#F5F5F5;
+    height:600px;
+    width :100%;
+}
+.gallary{
+    font-weight: bold;
+    font-size: 35px;
+    text-align: center;
+    padding-top: 50px;
+}
+#gallary1{
+    padding-top: 100px;
+
+}
+#gallary-text{
+    text-align: center;
+    
+}
+.img-background3{
+    padding:50px;
+}
+.contactus{
+    font-weight: bold;
+    font-size: 35px;
+    text-align: center;
+    
+}
+#form-logo{
+
+    padding-top: 50px;
+}
+#contact-form{
+    padding-top: 50px;
+}
+
+.input100{
+    border-radius: 10px;
+}
+
+
+/*---------------------------------------------------Image Animation ----------------------------------------------*/
+
+
+
+
+
+
+
